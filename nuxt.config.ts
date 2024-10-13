@@ -6,4 +6,8 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  buildDir: 'css',
+  app: {
+    baseURL: "/css",
+  },
 });
