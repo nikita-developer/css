@@ -15,6 +15,7 @@ const { users = [] } = defineProps<{
 		  <div class="user-list-head__title">Фамилия</div>
 		  <div class="user-list-head__title">Почта</div>
 		  <div class="user-list-head__title">Дата визита</div>
+		  <div class="user-list-head__title"></div>
 	  </div>
     <UserItem
       v-for="user in users"

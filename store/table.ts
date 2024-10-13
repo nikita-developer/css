@@ -16,5 +16,10 @@ export const useTableStore = defineStore("tableStore", () => {
   };
   const filterUsers = (search: string) => users_filter.value = users_list.value.filter((el) => el.firstName?.toLowerCase().indexOf(search.toLowerCase()) !== -1);
 
-  return { createUser, filterUsers, users_list, users_filter, search };
+  const deleteUser = (user: User) => {
+    users_list.value = users_list.value.filter((el: User) => el.id !== user.id);
+    filterUsers(search.value)
+  }
+
+  return { createUser, filterUsers, deleteUser, users_list, users_filter, search };
 });

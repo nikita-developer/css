@@ -14,5 +14,5 @@ export default defineNuxtConfig({
     baseURL: "/css",
   },
 
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@nuxt/icon"],
 });

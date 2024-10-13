@@ -1,6 +1,6 @@
 .user-item {
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 70px;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 1px solid #cfcfcf;
@@ -12,6 +12,13 @@
   &__col {
     padding: 5px 15px;
     font-weight: 200;
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
 
     &:first-child {
       font-weight: 700;

@@ -18,6 +18,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/icon": "^1.5.6",
     "sass": "^1.79.5",
     "typescript": "^5.6.3",
     "vite-plugin-vuetify": "^2.0.4",
