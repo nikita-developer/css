@@ -1,9 +1,9 @@
 export default interface User {
-  id?: number;
+  id?: number | string;
   firstName?: string;
   lastName?: string;
   email?: string;
-  lastVisitedAt?: number;
+  lastVisitedAt?: number | string;
 }
 
 export const defaultUser = (): User => {

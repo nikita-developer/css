@@ -1,0 +1,28 @@
+.user-create {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cfcfcf;
+
+  &__col {
+    padding: 5px 15px;
+
+    & + & {
+      border-left: 1px solid #cfcfcf;
+    }
+  }
+
+  &__field {
+    padding: 10px 15px;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+    font-weight: 200;
+    padding: 10px 15px;
+    border: 1px solid #cfcfcf;
+  }
+}
