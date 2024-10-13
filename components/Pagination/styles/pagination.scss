@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+
+  &__prev,
+  &__next,
+  &__page,
+  &__first-page,
+  &__last-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background-color: #cdcdcd;
+    }
+
+    &:active {
+      background-color: #a4d8ff;
+    }
+
+    &.active {
+      background-color: greenyellow;
+    }
+  }
+
+  &__body {
+    display: flex;
+    column-gap: 15px;
+  }
+}

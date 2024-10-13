@@ -1,0 +1,11 @@
+export default interface User {
+  id?: number;
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  lastVisitedAt?: number;
+}
+
+export const defaultUser = (): User => {
+  return {};
+};

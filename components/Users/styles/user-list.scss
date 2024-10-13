@@ -1,0 +1,17 @@
+.user-list-head {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cfcfcf;
+  border-bottom: 0;
+
+  &__title {
+    padding: 5px 15px;
+    font-weight: 700;
+
+    & + & {
+      border-left: 1px solid #cfcfcf;
+    }
+  }
+}
