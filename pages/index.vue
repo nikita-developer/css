@@ -36,8 +36,10 @@ const sort = () => (user_list.value = user_list.value.reverse());
         Сортировка по id
       </button>
     </div>
-    <UserList :users="user_list"></UserList>
-    <UserCreate></UserCreate>
+	  <div class="users-table__body">
+	    <UserList class="users-table__list" :users="user_list"></UserList>
+	    <UserCreate class="users-table__create"></UserCreate>
+	  </div>
     <Pagination
       :users="store.users_filter"
       :list_size="pagination_options.list_size"

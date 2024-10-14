@@ -7,6 +7,7 @@
 
   &__col {
     padding: 5px 15px;
+    display: flex;
 
     & + & {
       border-left: 1px solid #cfcfcf;
@@ -24,5 +25,10 @@
     font-weight: 200;
     padding: 10px 15px;
     border: 1px solid #cfcfcf;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 }
